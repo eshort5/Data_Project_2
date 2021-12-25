@@ -1,0 +1,56 @@
+*{
+
+}
+
+/*This applies to the whole page*/ 
+
+body{
+	background-color: honeydew;
+}
+
+/*This is for the title and my byline*/ 
+
+h1{
+	text-align: center;
+	font-family: Georgia;
+}
+
+h6{
+	text-align: center;
+	font-family: Georgia;
+}
+
+.flex-container {
+	display: flex;
+	flex-wrap: wrap;
+	text-align: center;
+	justify-content: center;
+	border-style: solid;
+	border-width: 2px;
+	border-color: black;
+	padding-left: auto;
+	padding-right: auto;
+	padding-bottom: auto;
+	padding-top: auto;
+	text-align: center;
+}
+
+div{
+	border-style: solid;
+	border-width: 1px;
+	border-color: black;
+	background-color: aliceblue;
+	padding-left: auto;
+	padding-right: auto;
+	padding-bottom: auto;
+	padding-top: auto;
+	text-align: center;
+}
+figcaption{
+	color: gray;
+	font-size: small;
+	font-style: italic;
+	padding: auto;
+	text-align: center;
+ }
+
