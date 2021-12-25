@@ -1,0 +1,879 @@
+<!doctype html>
+
+<html class="no-js"  lang="en-US">
+
+  <head>
+    <meta charset="utf-8">
+
+    <!-- Force IE to use the latest rendering engine available -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Mobile Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Park Funding - Public Advocate</title>
+
+    <script>
+      if (document.getElementsByTagName("title").length > 1){
+        extraTitle = document.getElementsByTagName("title")[1];
+        extraTitle.parentNode.removeChild(extraTitle);
+      };
+    </script>
+    <link rel="pingback" href="https://council.nyc.gov/public-advocate/xmlrpc.php">
+
+    <!-- Google Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+    <!-- Google Tag Manager
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-TCN4XTT');</script>
+    End Google Tag Manager -->
+
+    <!-- Carto -->
+    <link rel="stylesheet" href="https://cartodb-libs.global.ssl.fastly.net/cartodb.js/v3/3.15/themes/css/cartodb.css" />
+    
+    <link rel="shortcut icon" href="https://council.nyc.gov/public-advocate/wp-content/themes/wp-nycc/favicon.ico" />
+    
+    <meta name='robots' content='max-image-preview:large' />
+<link rel='dns-prefetch' href='//www.google.com' />
+<link rel='dns-prefetch' href='//use.fontawesome.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="Public Advocate &raquo; Feed" href="https://council.nyc.gov/public-advocate/feed/" />
+
+  <!-- Social Share Images -->
+  <meta property="og:url"          content="https://council.nyc.gov/public-advocate/park-funding/" />
+  <meta property="og:type"         content="website" />
+  <meta property="og:title"        content="Park Funding" />
+  <!-- <meta property="og:title"        content="<#?php echo $social_title ?>" /> -->
+  <meta property="og:site_name"    content="Public Advocate"/>
+  <meta property="og:description"  content="New York City Council" />
+  <meta property="og:image"        content="https://council.nyc.gov/jobs/wp-content/themes/wp-nycc/assets/images/social-img-1024x512.jpg"/>
+
+  <meta name="twitter:card"        content="summary_large_image" />
+  <meta name="twitter:site"        content="@NYCCouncil" />
+  <meta name="twitter:creator"     content="@NYCCouncil" />
+  <meta name="twitter:title"       content="Park Funding" />
+  <meta name="twitter:description" content="New York City Council" />
+  <meta name="twitter:image"       content="https://council.nyc.gov/jobs/wp-content/themes/wp-nycc/assets/images/social-img-1024x512.jpg" />
+
+  <link rel='stylesheet' id='wp-block-library-css'  href='https://council.nyc.gov/public-advocate/wp-includes/css/dist/block-library/style.min.css?ver=5.8.2' type='text/css' media='all' />
+<link rel='stylesheet' id='font-awesome-official-css'  href='https://use.fontawesome.com/releases/v5.12.1/css/all.css' type='text/css' media='all' integrity="sha384-v8BU367qNbs/aIZIxuivaU55N5GPF89WBerHoGA4QTcbUjYiLQtKdrfXnqAcXyTv" crossorigin="anonymous" />
+<link rel='stylesheet' id='bfa-font-awesome-css'  href='https://use.fontawesome.com/releases/v5.15.4/css/all.css?ver=2.0.1' type='text/css' media='all' />
+<link rel='stylesheet' id='bfa-font-awesome-v4-shim-css'  href='https://use.fontawesome.com/releases/v5.15.4/css/v4-shims.css?ver=2.0.1' type='text/css' media='all' />
+<style id='bfa-font-awesome-v4-shim-inline-css' type='text/css'>
+
+			@font-face {
+				font-family: 'FontAwesome';
+				src: url('https://use.fontawesome.com/releases/v5.15.4/webfonts/fa-brands-400.eot'),
+				url('https://use.fontawesome.com/releases/v5.15.4/webfonts/fa-brands-400.eot?#iefix') format('embedded-opentype'),
+				url('https://use.fontawesome.com/releases/v5.15.4/webfonts/fa-brands-400.woff2') format('woff2'),
+				url('https://use.fontawesome.com/releases/v5.15.4/webfonts/fa-brands-400.woff') format('woff'),
+				url('https://use.fontawesome.com/releases/v5.15.4/webfonts/fa-brands-400.ttf') format('truetype'),
+				url('https://use.fontawesome.com/releases/v5.15.4/webfonts/fa-brands-400.svg#fontawesome') format('svg');
+			}
+
+			@font-face {
+				font-family: 'FontAwesome';
+				src: url('https://use.fontawesome.com/releases/v5.15.4/webfonts/fa-solid-900.eot'),
+				url('https://use.fontawesome.com/releases/v5.15.4/webfonts/fa-solid-900.eot?#iefix') format('embedded-opentype'),
+				url('https://use.fontawesome.com/releases/v5.15.4/webfonts/fa-solid-900.woff2') format('woff2'),
+				url('https://use.fontawesome.com/releases/v5.15.4/webfonts/fa-solid-900.woff') format('woff'),
+				url('https://use.fontawesome.com/releases/v5.15.4/webfonts/fa-solid-900.ttf') format('truetype'),
+				url('https://use.fontawesome.com/releases/v5.15.4/webfonts/fa-solid-900.svg#fontawesome') format('svg');
+			}
+
+			@font-face {
+				font-family: 'FontAwesome';
+				src: url('https://use.fontawesome.com/releases/v5.15.4/webfonts/fa-regular-400.eot'),
+				url('https://use.fontawesome.com/releases/v5.15.4/webfonts/fa-regular-400.eot?#iefix') format('embedded-opentype'),
+				url('https://use.fontawesome.com/releases/v5.15.4/webfonts/fa-regular-400.woff2') format('woff2'),
+				url('https://use.fontawesome.com/releases/v5.15.4/webfonts/fa-regular-400.woff') format('woff'),
+				url('https://use.fontawesome.com/releases/v5.15.4/webfonts/fa-regular-400.ttf') format('truetype'),
+				url('https://use.fontawesome.com/releases/v5.15.4/webfonts/fa-regular-400.svg#fontawesome') format('svg');
+				unicode-range: U+F004-F005,U+F007,U+F017,U+F022,U+F024,U+F02E,U+F03E,U+F044,U+F057-F059,U+F06E,U+F070,U+F075,U+F07B-F07C,U+F080,U+F086,U+F089,U+F094,U+F09D,U+F0A0,U+F0A4-F0A7,U+F0C5,U+F0C7-F0C8,U+F0E0,U+F0EB,U+F0F3,U+F0F8,U+F0FE,U+F111,U+F118-F11A,U+F11C,U+F133,U+F144,U+F146,U+F14A,U+F14D-F14E,U+F150-F152,U+F15B-F15C,U+F164-F165,U+F185-F186,U+F191-F192,U+F1AD,U+F1C1-F1C9,U+F1CD,U+F1D8,U+F1E3,U+F1EA,U+F1F6,U+F1F9,U+F20A,U+F247-F249,U+F24D,U+F254-F25B,U+F25D,U+F267,U+F271-F274,U+F279,U+F28B,U+F28D,U+F2B5-F2B6,U+F2B9,U+F2BB,U+F2BD,U+F2C1-F2C2,U+F2D0,U+F2D2,U+F2DC,U+F2ED,U+F328,U+F358-F35B,U+F3A5,U+F3D1,U+F410,U+F4AD;
+			}
+		
+</style>
+<link rel='stylesheet' id='dashicons-css'  href='https://council.nyc.gov/public-advocate/wp-includes/css/dashicons.min.css?ver=5.8.2' type='text/css' media='all' />
+<link rel='stylesheet' id='site-css-css'  href='https://council.nyc.gov/wp-content/themes/wp-nycc/assets/css/app.min.css?ver=1639897699' type='text/css' media='all' />
+<link rel='stylesheet' id='font-awesome-official-v4shim-css'  href='https://use.fontawesome.com/releases/v5.12.1/css/v4-shims.css' type='text/css' media='all' integrity="sha384-C8a18+Gvny8XkjAdfto/vjAUdpGuPtl1Ix/K2BgKhFaVO6w4onVVHiEaN9h9XsvX" crossorigin="anonymous" />
+<style id='font-awesome-official-v4shim-inline-css' type='text/css'>
+@font-face {
+font-family: "FontAwesome";
+font-display: block;
+src: url("https://use.fontawesome.com/releases/v5.12.1/webfonts/fa-brands-400.eot"),
+		url("https://use.fontawesome.com/releases/v5.12.1/webfonts/fa-brands-400.eot?#iefix") format("embedded-opentype"),
+		url("https://use.fontawesome.com/releases/v5.12.1/webfonts/fa-brands-400.woff2") format("woff2"),
+		url("https://use.fontawesome.com/releases/v5.12.1/webfonts/fa-brands-400.woff") format("woff"),
+		url("https://use.fontawesome.com/releases/v5.12.1/webfonts/fa-brands-400.ttf") format("truetype"),
+		url("https://use.fontawesome.com/releases/v5.12.1/webfonts/fa-brands-400.svg#fontawesome") format("svg");
+}
+
+@font-face {
+font-family: "FontAwesome";
+font-display: block;
+src: url("https://use.fontawesome.com/releases/v5.12.1/webfonts/fa-solid-900.eot"),
+		url("https://use.fontawesome.com/releases/v5.12.1/webfonts/fa-solid-900.eot?#iefix") format("embedded-opentype"),
+		url("https://use.fontawesome.com/releases/v5.12.1/webfonts/fa-solid-900.woff2") format("woff2"),
+		url("https://use.fontawesome.com/releases/v5.12.1/webfonts/fa-solid-900.woff") format("woff"),
+		url("https://use.fontawesome.com/releases/v5.12.1/webfonts/fa-solid-900.ttf") format("truetype"),
+		url("https://use.fontawesome.com/releases/v5.12.1/webfonts/fa-solid-900.svg#fontawesome") format("svg");
+}
+
+@font-face {
+font-family: "FontAwesome";
+font-display: block;
+src: url("https://use.fontawesome.com/releases/v5.12.1/webfonts/fa-regular-400.eot"),
+		url("https://use.fontawesome.com/releases/v5.12.1/webfonts/fa-regular-400.eot?#iefix") format("embedded-opentype"),
+		url("https://use.fontawesome.com/releases/v5.12.1/webfonts/fa-regular-400.woff2") format("woff2"),
+		url("https://use.fontawesome.com/releases/v5.12.1/webfonts/fa-regular-400.woff") format("woff"),
+		url("https://use.fontawesome.com/releases/v5.12.1/webfonts/fa-regular-400.ttf") format("truetype"),
+		url("https://use.fontawesome.com/releases/v5.12.1/webfonts/fa-regular-400.svg#fontawesome") format("svg");
+unicode-range: U+F004-F005,U+F007,U+F017,U+F022,U+F024,U+F02E,U+F03E,U+F044,U+F057-F059,U+F06E,U+F070,U+F075,U+F07B-F07C,U+F080,U+F086,U+F089,U+F094,U+F09D,U+F0A0,U+F0A4-F0A7,U+F0C5,U+F0C7-F0C8,U+F0E0,U+F0EB,U+F0F3,U+F0F8,U+F0FE,U+F111,U+F118-F11A,U+F11C,U+F133,U+F144,U+F146,U+F14A,U+F14D-F14E,U+F150-F152,U+F15B-F15C,U+F164-F165,U+F185-F186,U+F191-F192,U+F1AD,U+F1C1-F1C9,U+F1CD,U+F1D8,U+F1E3,U+F1EA,U+F1F6,U+F1F9,U+F20A,U+F247-F249,U+F24D,U+F254-F25B,U+F25D,U+F267,U+F271-F274,U+F279,U+F28B,U+F28D,U+F2B5-F2B6,U+F2B9,U+F2BB,U+F2BD,U+F2C1-F2C2,U+F2D0,U+F2D2,U+F2DC,U+F2ED,U+F328,U+F358-F35B,U+F3A5,U+F3D1,U+F410,U+F4AD;
+}
+</style>
+<script type='text/javascript' id='jquery-core-js-extra'>
+/* <![CDATA[ */
+var SDT_DATA = {"ajaxurl":"https:\/\/council.nyc.gov\/public-advocate\/wp-admin\/admin-ajax.php","siteUrl":"https:\/\/council.nyc.gov\/public-advocate\/","pluginsUrl":"https:\/\/council.nyc.gov\/public-advocate\/wp-content\/plugins","isAdmin":""};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://council.nyc.gov/public-advocate/wp-includes/js/jquery/jquery.min.js?ver=3.6.0' id='jquery-core-js'></script>
+<script type='text/javascript' src='https://council.nyc.gov/public-advocate/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2' id='jquery-migrate-js'></script>
+<link rel="https://api.w.org/" href="https://council.nyc.gov/public-advocate/wp-json/" /><link rel="alternate" type="application/json" href="https://council.nyc.gov/public-advocate/wp-json/wp/v2/pages/1247" /><link rel="canonical" href="https://council.nyc.gov/public-advocate/park-funding/" />
+<link rel='shortlink' href='https://council.nyc.gov/public-advocate/?p=1247' />
+<link rel="alternate" type="application/json+oembed" href="https://council.nyc.gov/public-advocate/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fcouncil.nyc.gov%2Fpublic-advocate%2Fpark-funding%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://council.nyc.gov/public-advocate/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fcouncil.nyc.gov%2Fpublic-advocate%2Fpark-funding%2F&#038;format=xml" />
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>    <script>jQuery(document).ready(function(){jQuery('#archive .dismiss span').on('click',function(){jQuery('#archive').animate({'opacity': 0}, 300)})});</script>
+  </head>
+  
+  <body class="page-template page-template-page-nomenu page-template-page-nomenu-php page page-id-1247">
+    <a style="position: absolute; top:0; left: -10000px;" id="skip-link-a" href="#main">Skip to main content</a>
+    <!-- <script>jQuery("#skip-link-a").focus(function(){jQuery("#skip-link-li").css("position","initial")}).focusout(function(){jQuery("#skip-link-li").css("position","absolute")});</script> -->
+    <!-- Google Tag Manager (noscript)
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TCN4XTT"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    End Google Tag Manager (noscript) -->
+        <div id="map-container" class="short" aria-hidden="true">
+      <div id="map"></div>
+      <button class="map-toggler" id="map-toggler">Expand Map</button>
+    </div>
+    
+    <div id="sticky-wrapper">
+      <div data-sticky-container>
+        <header class="site-header sticky" role="header" data-sticky data-margin-top="0" data-sticky-on="small" data-anchor="sticky-wrapper">
+          <div class="top-bar">
+            <div class="row">
+              <div class="columns">
+                                <div class="top-bar-title">
+                  <strong class="site-logo"><a href="http://council.nyc.gov/"><img alt="NYC Council Seal" src="https://council.nyc.gov/public-advocate/wp-content/themes/wp-nycc/assets/images/nyc-seal-blue.png"><div class="site-logo" style="display:inline;">New York City Council</div></a></strong>
+                </div>
+                <span class="responsive-menu-toggle" data-responsive-toggle="responsive-menu" data-hide-for="large"><span class="menu-icon dark" data-toggle></span></span>
+                <div role="navigation" id="responsive-menu">
+                  <div class="top-bar-right">
+                    <!-- replace with hardcoded html-->
+                    <ul id="menu-main-menu" class="vertical large-horizontal menu dropdown" data-disable-hover="true" data-click-open="true" data-dropdown-menu>
+                      <li class="custom-dropdown-hover is-dropdown-submenu-parent opens-left">
+                        <a href="#">About</a>
+                        <ul class="menu">
+                          <li><a href="https://council.nyc.gov/visit-the-council/">Visit the Council</a></li>
+                          <li><a href="https://council.nyc.gov/events/">Events</a></li>
+                          <li><a href="https://council.nyc.gov/about/">What we do</a></li>
+                          <li><a href="https://council.nyc.gov/committees/">Committees</a></li>
+                          <li><a href="https://council.nyc.gov/caucuses/">Caucuses</a></li>
+                        </ul>
+                      </li>
+                      <li class="custom-dropdown-hover is-dropdown-submenu-parent opens-left">
+                        <a href="#">Districts</a>
+                        <ul class="menu">
+                          <li><a href="https://council.nyc.gov/districts/">Council Members &amp; Districts</a></li>
+                          <li><a href="https://council.nyc.gov/district-info/">District Info</a></li>
+                        </ul>
+                      </li>
+                      <li class="custom-dropdown-hover is-dropdown-submenu-parent opens-left">
+                        <a href="#">Legislation</a>
+                        <ul class="menu">
+                          <li><a href="https://council.nyc.gov/legislation/">Our legislative process</a></li>
+                          <!-- <li><a href="https://council.nyc.gov/testify">Register to Testify</a></li> -->
+                          <!-- <li><a href="https://council.nyc.gov/livestream/">Live Stream</a></li> -->
+                          <li><a href="https://council.nyc.gov/live/">Live video</a></li>
+                          <li><a href="http://legistar.council.nyc.gov/Calendar.aspx">Hearings Calendar and Video Archive</a></li>
+                          <li><a href="http://legistar.council.nyc.gov/Legislation.aspx">Search legislation</a></li>
+                          <!--<li><a href="http://laws.council.nyc.gov">Search legislation via Councilmatic (beta)</a></li>-->
+                          <li><a href="https://council.nyc.gov/legislation/api/">Legislative API</a></li>
+                          <li><a href="https://council.nyc.gov/data/">Data</a></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a href="https://council.nyc.gov/budget/">Budget</a>
+                      </li>
+                      <li>
+                        <a href="https://council.nyc.gov/land-use/">Land Use</a>
+                      </li>
+                      <li class="is-dropdown-submenu-parent opens-left">
+                        <a href="#">Press &amp; News</a>
+                        <ul class="menu">
+                          <li><a href="https://council.nyc.gov/foil-request/">Submit a "Freedom of Information Law" (FOIL) Request</a></li>
+                          <li><a href="https://council.nyc.gov/press/">Press Releases</a></li>
+                          <li><a href="https://council.nyc.gov/news/category/reports/">Reports</a></li>
+                          <li><a href="https://council.nyc.gov/press/press-photos/">Photos</a></li>
+                          <li><a href="https://council.nyc.gov/news/tag/video/">Videos</a></li>
+                        </ul>
+                      </li>
+                    </ul>                  
+                    <!--<#?php nycc_main_nav(); ?>-->
+                    <script>
+                      // jQuery(".custom-dropdown-hover").mouseenter(function(){
+                      //   jQuery(this).children().first().attr("aria-expanded", "true");
+                      // }).focusin(function(){
+                      //   jQuery(this).children().first().attr("aria-expanded", "true");
+                      // });
+                      // jQuery(".custom-dropdown-hover").mouseleave(function(){
+                      //   jQuery(this).children().first().attr("aria-expanded", "false");
+                      // }).focusout(function(){
+                      //   jQuery(this).children().first().attr("aria-expanded", "false");
+                      // });
+                      jQuery(document).ready(function(){
+                        $("#translation-menu-dropdown").css("visibility","visible").hide();
+                        jQuery("#translation-button").click(function(){
+                          if(jQuery("#translation-menu-dropdown").css("display") === "none"){
+                            jQuery("#translation-menu-dropdown").show();
+                          } else{
+                            jQuery("#translation-menu-dropdown").hide();
+                          }
+                        });
+                        jQuery("#close-menu").click(function(){jQuery("#translation-menu-dropdown").hide();});
+                      });
+                    </script>
+                  </div>
+                </div>
+                              </div>
+            </div>
+          </div>
+        </header>
+      </div>
+      <main id="main">
+        <div class="site-container">
+                    <div id="translation-menu" class="row column text-right">
+            <button id="translation-button" class="button dashicons-before dashicons-translation">
+              <span class="show-for-sr">Translate this page</span>
+            </button>
+            <div class="dropdown-pane" id="translation-menu-dropdown">
+              <button id="close-menu" style="position:absolute; top:3px; right:3px; cursor:pointer;">&#10005;</button>
+              <div id="google_translate_element"><span class="show-for-sr">Google Translate</span></div>
+              <script type="text/javascript">function googleTranslateElementInit() {new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.FloatPosition.BOTTOM_RIGHT}, 'google_translate_element');}</script>
+              <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+            </div>
+          </div>
+                    <!-- START OF MAIN CONTENT -->
+  
+  <div class="row">
+    <div class="columns medium-12">
+
+      
+      <article id="post-1247" class="post-1247 page type-page status-publish hentry">
+
+        <!--<header class="page-header">
+          <h1></h1>
+          <hr>
+        </header>-->
+
+        <section class="page-content">
+          <h1>Public and Private Funding in NYC Parks</h1>
+<div class="row">
+<div class="column large-8">
+<h3>Bronx</h3>
+<table id="bronx">
+<tbody></tbody>
+</table>
+<h3>Brooklyn</h3>
+<table id="brooklyn">
+<tbody></tbody>
+</table>
+<h3>Manhattan</h3>
+<table id="manhattan">
+<tbody></tbody>
+</table>
+<h3>Queens</h3>
+<table id="queens">
+<tbody></tbody>
+</table>
+<h3>Staten Island</h3>
+<table id="staten-island">
+<tbody></tbody>
+</table>
+</div>
+<div class="column large-4" align="center">
+    <a class="button expanded" href="https://council.nyc.gov/public-advocate/">Home</a></p>
+<p><a class="button expanded" href="https://council.nyc.gov/public-advocate/parks">Parks Page</a></p>
+</div>
+</div>
+        </section>
+
+      </article>
+
+      
+    </div>
+
+  </div>
+
+        </div><!-- end .site-container -->
+      </main>
+      <footer class="site-footer">
+        <div class="row">
+    <div class="columns medium-7">
+        <div class="widget footer-widget">
+            <h3 class="widget-title">Visit the Council</h3>
+            <p>We're located at <a href="https://www.google.com/maps/place/New+York+City+Hall/@40.7127744,-74.008253,17z/data=!3m1!4b1!4m2!3m1!1s0x89c258fda88cefb3:0x7f1e88758d210007"><strong>New York City Hall</strong> (map)</a>. Council Members each have an office at <a href="https://www.google.com/maps/place/250+Broadway,+New+York,+NY+10007/@40.7129838,-74.010099,17z/data=!4m7!1m4!3m3!1s0x89c258828f59541d:0x539864ce22092177!2s250+Broadway,+New+York,+NY+10007!3b1!3m1!1s0x89c258828f59541d:0x539864ce22092177"><strong>250 Broadway</strong> (map)</a>, as well as offices in each of their districts.</p>
+        </div>
+        <div class="widget footer-widget">
+            <h3 class="widget-title">We want to hear from you</h3>
+            <p>With your insight, the Council discovers ways to improve the City we all call home. So we're meeting New Yorkers where they are—online and in person. Keep your feedback coming!</p>
+            <p>You can reach us via social media, email, paper mail, or at your district office. For issues specific to a neighborhood, it's best to <a href="/districts/"><strong>contact the Council Member representing that community.</strong></a></p>
+            <p>Have questions, comments or feedback? <a id="lab-link" class="lab-link" href="mailto:correspondence@council.nyc.gov"><strong>Email us here.</strong></a></p>
+            <ul class="menu simple social-buttons">
+                <li><a style="border-bottom: none;" data-tooltip aria-haspopup="true" class="has-tip" title="New York City Council's Facebook" href="https://www.facebook.com/NYCCouncil"><img alt="New York City Council's Facebook" class="inline-icon large" src="/wp-content/themes/wp-nycc/assets/images/social-icon-facebook.png"></a></li>
+                <li><a style="border-bottom: none;" data-tooltip aria-haspopup="true" class="has-tip" title="New York City Council's Twitter" href="https://twitter.com/NYCCouncil"><img alt="New York City Council's Twitter" class="inline-icon large" src="/wp-content/themes/wp-nycc/assets/images/social-icon-twitter.png"></a></li>
+                <li><a style="border-bottom: none;" data-tooltip aria-haspopup="true" class="has-tip" title="New York City Council's Instagram" href="https://instagram.com/NYCCouncil"><img alt="New York City Council's Instagram" class="inline-icon large" src="/wp-content/themes/wp-nycc/assets/images/social-icon-instagram.png"></a></li>
+                <li><a style="border-bottom: none;" data-tooltip aria-haspopup="true" class="has-tip" title="New York City Council's YouTube" href="https://www.youtube.com/channel/UCu8AwLHSpgiFtKvHi_TFHog" style="height:50px; width:50px;"><img alt="New York City Council's YouTube" class="inline-icon large" style="width: 36px; height: 36px; top: 12%; position: relative;" src="/wp-content/themes/wp-nycc/assets/images/social-icon-youtube.png"></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="columns medium-5">
+        <div class="widget footer-widget">
+            <h3 class="widget-title"> Job Opportunities</h3>
+            <p> The New York City Council is an Equal Opportunity Employer. Please explore our <a href="/jobs/"><strong>Job Opportunities</strong></a>.</p>
+            <p>If you are interested in working at the New York City Council, <a href="mailto:counciljobs@council.nyc.gov"><strong>please submit your resume and area of interest here</strong></a>.</p>
+        </div>
+        <div class="widget footer-widget">
+            <h3 class="widget-title">Accessibility</h3>
+            <p style="font-weight: bold;"><a href="https://council.nyc.gov/accessibility-statement/">Read our Accessibility Statement</a></p>
+            <a href="https://www.essentialaccessibility.com/new-york-city-council/?utm_source=newyorkcitycouncilhomepage&utm_medium=iconlarge&utm_term=eachannelpage&utm_content=header&utm_campaign=newyorkcitycouncil" target="_blank">
+                <img src="http://council.nyc.gov/wp-content/uploads/2019/08/english-ea-icon.png" style="width: 125px;" alt="Download Essential Accessibility's Assistive Technology">
+            </a>
+        </div>
+    </div>
+</div>        <div class="reveal" id="general_inquiries" data-reveal>
+          <h4 class="header-small">General Inquiries</h4>
+          [contact-form-7 404 "Not Found"]          <button class="close-button" data-close aria-label="Close modal" type="button"><span aria-hidden="true">&times;</span></button>
+        </div>
+              </footer>
+
+    </div><!-- end .sticky-wrapper -->
+
+    <script type="text/javascript" id="sns_scripts">$(document).ready(function(){
+  $.ajax({
+    type:"GET",
+    url: "https://newyorkcitycouncil.github.io/Parks_PA/results/data_files/funding.json",
+    dataType: "json",
+    data: {},
+    success:function(data){
+      // Sort list of all parks by # then A-Z
+      let sortedData = data.sort(function(a,b){
+        if(a["Name"] < b["Name"]){
+          return -1
+        }else if(a["Name"]>b["Name"]){
+          return 1
+        }else{
+          return 0
+        };
+      });
+
+      // Dynamically populate column headers
+      let headerColumns = Object.keys(data[0]);
+      let headerRow = "<tr>"
+      headerColumns.forEach(function(columnName){
+        headerRow += "<th>"+columnName.toUpperCase()+"</th>"
+      });
+      headerRow += "</tr>"
+      $("#bronx").append($(headerRow));
+      $("#brooklyn").append($(headerRow));
+      $("#manhattan").append($(headerRow));
+      $("#queens").append($(headerRow));
+      $("#staten-island").append($(headerRow));
+
+      let bronxLocation = "";
+      let brooklynLocation = "";
+      let manhattanLocation = "";
+      let queensLocation = "";
+      let statenIslandLocation = "";
+
+      data.forEach(function(row){
+        // Create the row
+        let park = "<tr>"
+        // Add all the columns
+        headerColumns.forEach(function(column){
+          park += "<td>"+(row[column] === '' ? 'N/A' : row[column].toUpperCase())+"</td>";
+        });
+        // Close the row
+        park += "</tr>";
+
+        // Add row to 'middle'-table based on borough
+        if(row["Borough"].toLowerCase() === "bronx"){
+          bronxLocation += park;
+        } else if(row["Borough"].toLowerCase() === "brooklyn"){
+          brooklynLocation += park;
+        } else if(row["Borough"].toLowerCase() === "manhattan"){
+          manhattanLocation += park;
+        } else if(row["Borough"].toLowerCase() === "queens"){
+          queensLocation += park;
+        } else if(row["Borough"].toLowerCase() === "staten island"){
+          statenIslandLocation += park;
+        }
+      });
+
+      // Add filtered rows to the correct table
+      $("#bronx").append($(bronxLocation));
+      $("#brooklyn").append($(brooklynLocation));
+      $("#manhattan").append($(manhattanLocation));
+      $("#queens").append($(queensLocation));
+      $("#staten-island").append($(statenIslandLocation));
+
+      //Removes the "Borough" column
+      $("#bronx th:last-child, #bronx td:last-child").remove();
+      $("#brooklyn th:last-child, #brooklyn td:last-child").remove();
+      $("#manhattan th:last-child, #manhattan td:last-child").remove();
+      $("#queens th:last-child, #queens td:last-child").remove();
+      $("#staten-island th:last-child, #staten-island td:last-child").remove();
+    }
+  });
+});
+</script><script type='text/javascript' src='https://council.nyc.gov/public-advocate/wp-content/plugins/data-tables-generator-by-supsystic/app/assets/js/dtgsnonce.js?ver=0.01' id='dtgs_nonce_frontend-js'></script>
+<script type='text/javascript' id='dtgs_nonce_frontend-js-after'>
+var DTGS_NONCE_FRONTEND = "6414e8196c"
+</script>
+<script type='text/javascript' src='https://council.nyc.gov/public-advocate/wp-includes/js/dist/vendor/regenerator-runtime.min.js?ver=0.13.7' id='regenerator-runtime-js'></script>
+<script type='text/javascript' src='https://council.nyc.gov/public-advocate/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=3.15.0' id='wp-polyfill-js'></script>
+<script type='text/javascript' id='contact-form-7-js-extra'>
+/* <![CDATA[ */
+var wpcf7 = {"api":{"root":"https:\/\/council.nyc.gov\/public-advocate\/wp-json\/","namespace":"contact-form-7\/v1"},"cached":"1"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://council.nyc.gov/public-advocate/wp-content/plugins/contact-form-7/includes/js/index.js?ver=5.5.3' id='contact-form-7-js'></script>
+<script type='text/javascript' src='https://www.google.com/recaptcha/api.js?render=6Ld0WIAUAAAAACmsuJ8dbCSvI2fKtCRc_lzEsyn3&#038;ver=3.0' id='google-recaptcha-js'></script>
+<script type='text/javascript' id='wpcf7-recaptcha-js-extra'>
+/* <![CDATA[ */
+var wpcf7_recaptcha = {"sitekey":"6Ld0WIAUAAAAACmsuJ8dbCSvI2fKtCRc_lzEsyn3","actions":{"homepage":"homepage","contactform":"contactform"}};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://council.nyc.gov/public-advocate/wp-content/plugins/contact-form-7/modules/recaptcha/index.js?ver=5.5.3' id='wpcf7-recaptcha-js'></script>
+<script type='text/javascript' src='https://council.nyc.gov/wp-content/themes/wp-nycc/assets/js/foundation.min.js?ver=6.2' id='foundation-js-js'></script>
+<script type='text/javascript' src='https://council.nyc.gov/wp-content/themes/wp-nycc/assets/js/scripts.min.js?ver=5.8.2' id='site-js-js'></script>
+<script type='text/javascript' src='https://council.nyc.gov/public-advocate/wp-includes/js/wp-embed.min.js?ver=5.8.2' id='wp-embed-js'></script>
+
+    
+<script src="https://cartodb-libs.global.ssl.fastly.net/cartodb.js/v3/3.15/cartodb.js"></script>
+<script>
+
+  /**
+   * Popup Data
+   */
+
+  var popupData = new Object;
+
+        popupData.URI1 = 'https://council.nyc.gov/district-1/';
+              popupData.Thumb1 = 'https://raw.githubusercontent.com/NewYorkCityCouncil/districts/master/thumbnails/district-1.jpg';
+        popupData.Member1 = 'Margaret S. Chin';
+              popupData.URI2 = 'https://council.nyc.gov/district-2/';
+              popupData.Thumb2 = 'https://raw.githubusercontent.com/NewYorkCityCouncil/districts/master/thumbnails/district-2.jpg';
+        popupData.Member2 = 'Carlina Rivera';
+              popupData.URI3 = 'https://council.nyc.gov/district-3/';
+              popupData.Thumb3 = 'https://raw.githubusercontent.com/NewYorkCityCouncil/districts/master/thumbnails/district-3.jpg';
+        popupData.Member3 = 'Corey Johnson';
+              popupData.URI4 = 'https://council.nyc.gov/district-4/';
+              popupData.Thumb4 = 'https://raw.githubusercontent.com/NewYorkCityCouncil/districts/master/thumbnails/district-4.jpg';
+        popupData.Member4 = 'Keith Powers';
+              popupData.URI5 = 'https://council.nyc.gov/district-5/';
+              popupData.Thumb5 = 'https://raw.githubusercontent.com/NewYorkCityCouncil/districts/master/thumbnails/district-5.jpg';
+        popupData.Member5 = 'Ben Kallos';
+              popupData.URI6 = 'https://council.nyc.gov/district-6/';
+              popupData.Thumb6 = 'https://raw.githubusercontent.com/NewYorkCityCouncil/districts/master/thumbnails/district-6.jpg';
+        popupData.Member6 = 'Helen Rosenthal';
+              popupData.URI7 = 'https://council.nyc.gov/district-7/';
+              popupData.Thumb7 = 'https://raw.githubusercontent.com/NewYorkCityCouncil/districts/master/thumbnails/district-7.jpg';
+        popupData.Member7 = 'Mark Levine';
+              popupData.URI8 = 'https://council.nyc.gov/district-8/';
+              popupData.Thumb8 = 'https://raw.githubusercontent.com/NewYorkCityCouncil/districts/master/thumbnails/district-8.jpg';
+        popupData.Member8 = 'Diana Ayala';
+              popupData.URI9 = 'https://council.nyc.gov/district-9/';
+              popupData.Thumb9 = 'https://raw.githubusercontent.com/NewYorkCityCouncil/districts/master/thumbnails/district-9.jpg';
+        popupData.Member9 = 'Bill Perkins';
+              popupData.URI10 = 'https://council.nyc.gov/district-10/';
+              popupData.Thumb10 = 'https://raw.githubusercontent.com/NewYorkCityCouncil/districts/master/thumbnails/district-10.jpg';
+        popupData.Member10 = 'Ydanis Rodriguez';
+              popupData.URI11 = 'https://council.nyc.gov/district-11/';
+              popupData.Thumb11 = 'https://raw.githubusercontent.com/NewYorkCityCouncil/districts/master/thumbnails/district-11.jpg';
+        popupData.Member11 = 'Eric Dinowitz';
+              popupData.URI12 = 'https://council.nyc.gov/district-12/';
+              popupData.Thumb12 = 'https://raw.githubusercontent.com/NewYorkCityCouncil/districts/master/thumbnails/district-12.jpg';
+        popupData.Member12 = 'Kevin Riley';
+              popupData.URI13 = 'https://council.nyc.gov/district-13/';
+              popupData.Thumb13 = 'https://raw.githubusercontent.com/NewYorkCityCouncil/districts/master/thumbnails/district-13.jpg';
+        popupData.Member13 = 'Mark Gjonaj';
+              popupData.URI14 = 'https://council.nyc.gov/district-14/';
+              popupData.Thumb14 = 'https://raw.githubusercontent.com/NewYorkCityCouncil/districts/master/thumbnails/district-14.jpg';
+        popupData.Member14 = 'Fernando Cabrera';
+              popupData.URI15 = 'https://council.nyc.gov/district-15/';
+              popupData.Thumb15 = 'https://raw.githubusercontent.com/NewYorkCityCouncil/districts/master/thumbnails/district-15.jpg';
+        popupData.Member15 = 'Oswald Feliz';
+              popupData.URI16 = 'https://council.nyc.gov/district-16/';
+              popupData.Thumb16 = 'https://raw.githubusercontent.com/NewYorkCityCouncil/districts/master/thumbnails/district-16.jpg';
+        popupData.Member16 = 'Vanessa L. Gibson';
+              popupData.URI17 = 'https://council.nyc.gov/district-17/';
+              popupData.Thumb17 = 'https://raw.githubusercontent.com/NewYorkCityCouncil/districts/master/thumbnails/district-17.jpg';
+        popupData.Member17 = 'Rafael Salamanca Jr.';
+              popupData.URI18 = 'https://council.nyc.gov/district-18/';
+              popupData.Thumb18 = 'https://raw.githubusercontent.com/NewYorkCityCouncil/districts/master/thumbnails/district-18.jpg';
+        popupData.Member18 = 'Ruben Diaz, Sr.';
+              popupData.URI19 = 'https://council.nyc.gov/district-19/';
+              popupData.Thumb19 = 'https://raw.githubusercontent.com/NewYorkCityCouncil/districts/master/thumbnails/district-19.jpg';
+        popupData.Member19 = 'Paul Vallone';
+              popupData.URI20 = 'https://council.nyc.gov/district-20/';
+              popupData.Thumb20 = 'https://raw.githubusercontent.com/NewYorkCityCouncil/districts/master/thumbnails/district-20.jpg';
+        popupData.Member20 = 'Peter Koo';
+              popupData.URI21 = 'https://council.nyc.gov/district-21/';
+              popupData.Thumb21 = 'https://raw.githubusercontent.com/NewYorkCityCouncil/districts/master/thumbnails/district-21.jpg';
+        popupData.Member21 = 'Francisco Moya';
+              popupData.URI22 = 'https://council.nyc.gov/district-22/';
+              popupData.Thumb22 = 'https://raw.githubusercontent.com/NewYorkCityCouncil/districts/master/thumbnails/district-22.jpg';
+        popupData.Member22 = 'Tiffany Cabán';
+              popupData.URI23 = 'https://council.nyc.gov/district-23/';
+              popupData.Thumb23 = 'https://raw.githubusercontent.com/NewYorkCityCouncil/districts/master/thumbnails/district-23.jpg';
+        popupData.Member23 = 'Barry Grodenchik';
+              popupData.URI24 = 'https://council.nyc.gov/district-24/';
+              popupData.Thumb24 = 'https://raw.githubusercontent.com/NewYorkCityCouncil/districts/master/thumbnails/district-24.jpg';
+        popupData.Member24 = 'James F. Gennaro';
+              popupData.URI25 = 'https://council.nyc.gov/district-25/';
+              popupData.Thumb25 = 'https://raw.githubusercontent.com/NewYorkCityCouncil/districts/master/thumbnails/district-25.jpg';
+        popupData.Member25 = 'Daniel Dromm';
+              popupData.URI26 = 'https://council.nyc.gov/district-26/';
+              popupData.Thumb26 = 'https://raw.githubusercontent.com/NewYorkCityCouncil/districts/master/thumbnails/district-26.jpg';
+        popupData.Member26 = 'Jimmy Van Bramer';
+              popupData.URI27 = 'https://council.nyc.gov/district-27/';
+              popupData.Thumb27 = 'https://raw.githubusercontent.com/NewYorkCityCouncil/districts/master/thumbnails/district-27.jpg';
+        popupData.Member27 = 'I. Daneek Miller';
+              popupData.URI28 = 'https://council.nyc.gov/district-28/';
+              popupData.Thumb28 = 'https://raw.githubusercontent.com/NewYorkCityCouncil/districts/master/thumbnails/district-28.jpg';
+        popupData.Member28 = 'Adrienne E. Adams';
+              popupData.URI29 = 'https://council.nyc.gov/district-29/';
+              popupData.Thumb29 = 'https://raw.githubusercontent.com/NewYorkCityCouncil/districts/master/thumbnails/district-29.jpg';
+        popupData.Member29 = 'Karen Koslowitz';
+              popupData.URI30 = 'https://council.nyc.gov/district-30/';
+              popupData.Thumb30 = 'https://raw.githubusercontent.com/NewYorkCityCouncil/districts/master/thumbnails/district-30.jpg';
+        popupData.Member30 = 'Robert F. Holden';
+              popupData.URI31 = 'https://council.nyc.gov/district-31/';
+              popupData.Thumb31 = 'https://raw.githubusercontent.com/NewYorkCityCouncil/districts/master/thumbnails/district-31.jpg';
+        popupData.Member31 = 'Selvena N. Brooks-Powers';
+              popupData.URI32 = 'https://council.nyc.gov/district-32/';
+              popupData.Thumb32 = 'https://raw.githubusercontent.com/NewYorkCityCouncil/districts/master/thumbnails/district-32.jpg';
+        popupData.Member32 = 'Eric A. Ulrich';
+              popupData.URI33 = 'https://council.nyc.gov/district-33/';
+              popupData.Thumb33 = 'https://raw.githubusercontent.com/NewYorkCityCouncil/districts/master/thumbnails/district-33.jpg';
+        popupData.Member33 = 'Stephen T. Levin';
+              popupData.URI34 = 'https://council.nyc.gov/district-34/';
+              popupData.Thumb34 = 'https://raw.githubusercontent.com/NewYorkCityCouncil/districts/master/thumbnails/district-34.jpg';
+        popupData.Member34 = 'Antonio Reynoso';
+              popupData.URI35 = 'https://council.nyc.gov/district-35/';
+              popupData.Thumb35 = 'https://raw.githubusercontent.com/NewYorkCityCouncil/districts/master/thumbnails/district-35.jpg';
+        popupData.Member35 = 'Laurie A. Cumbo';
+              popupData.URI36 = 'https://council.nyc.gov/district-36/';
+              popupData.Thumb36 = 'https://raw.githubusercontent.com/NewYorkCityCouncil/districts/master/thumbnails/district-36.jpg';
+        popupData.Member36 = 'Robert E. Cornegy, Jr.';
+              popupData.URI37 = 'https://council.nyc.gov/district-37/';
+              popupData.Thumb37 = 'https://raw.githubusercontent.com/NewYorkCityCouncil/districts/master/thumbnails/district-37.jpg';
+        popupData.Member37 = 'Darma V. Diaz';
+              popupData.URI38 = 'https://council.nyc.gov/district-38/';
+              popupData.Thumb38 = 'https://raw.githubusercontent.com/NewYorkCityCouncil/districts/master/thumbnails/district-38.jpg';
+        popupData.Member38 = 'Carlos Menchaca';
+              popupData.URI39 = 'https://council.nyc.gov/district-39/';
+              popupData.Thumb39 = 'https://raw.githubusercontent.com/NewYorkCityCouncil/districts/master/thumbnails/district-39.jpg';
+        popupData.Member39 = 'Brad Lander';
+              popupData.URI40 = 'https://council.nyc.gov/district-40/';
+              popupData.Thumb40 = 'https://raw.githubusercontent.com/NewYorkCityCouncil/districts/master/thumbnails/district-40.jpg';
+        popupData.Member40 = 'Mathieu Eugene';
+              popupData.URI41 = 'https://council.nyc.gov/district-41/';
+              popupData.Thumb41 = 'https://raw.githubusercontent.com/NewYorkCityCouncil/districts/master/thumbnails/district-41.jpg';
+        popupData.Member41 = 'Alicka Ampry-Samuel';
+              popupData.URI42 = 'https://council.nyc.gov/district-42/';
+              popupData.Thumb42 = 'https://raw.githubusercontent.com/NewYorkCityCouncil/districts/master/thumbnails/district-42.jpg';
+        popupData.Member42 = 'Inez Barron';
+              popupData.URI43 = 'https://council.nyc.gov/district-43/';
+              popupData.Thumb43 = 'https://raw.githubusercontent.com/NewYorkCityCouncil/districts/master/thumbnails/district-43.jpg';
+        popupData.Member43 = 'Justin Brannan';
+              popupData.URI44 = 'https://council.nyc.gov/district-44/';
+              popupData.Thumb44 = 'https://raw.githubusercontent.com/NewYorkCityCouncil/districts/master/thumbnails/district-44.jpg';
+        popupData.Member44 = 'Kalman Yeger';
+              popupData.URI45 = 'https://council.nyc.gov/district-45/';
+              popupData.Thumb45 = 'https://raw.githubusercontent.com/NewYorkCityCouncil/districts/master/thumbnails/district-45.jpg';
+        popupData.Member45 = 'Farah N. Louis';
+              popupData.URI46 = 'https://council.nyc.gov/district-46/';
+              popupData.Thumb46 = 'https://raw.githubusercontent.com/NewYorkCityCouncil/districts/master/thumbnails/district-46.jpg';
+        popupData.Member46 = 'Alan N. Maisel';
+              popupData.URI47 = 'https://council.nyc.gov/district-47/';
+              popupData.Thumb47 = 'https://raw.githubusercontent.com/NewYorkCityCouncil/districts/master/thumbnails/district-47.jpg';
+        popupData.Member47 = 'Mark Treyger';
+              popupData.URI48 = 'https://council.nyc.gov/district-48/';
+              popupData.Thumb48 = 'https://raw.githubusercontent.com/NewYorkCityCouncil/districts/master/thumbnails/district-48.jpg';
+        popupData.Member48 = 'Inna Vernikov';
+              popupData.URI49 = 'https://council.nyc.gov/district-49/';
+              popupData.Thumb49 = 'https://raw.githubusercontent.com/NewYorkCityCouncil/districts/master/thumbnails/district-49.jpg';
+        popupData.Member49 = 'Deborah Rose';
+              popupData.URI50 = 'https://council.nyc.gov/district-50/';
+              popupData.Thumb50 = 'https://raw.githubusercontent.com/NewYorkCityCouncil/districts/master/thumbnails/district-50.jpg';
+        popupData.Member50 = 'David Carr';
+              popupData.URI51 = 'https://council.nyc.gov/district-51/';
+              popupData.Thumb51 = 'https://raw.githubusercontent.com/NewYorkCityCouncil/districts/master/thumbnails/district-51.jpg';
+        popupData.Member51 = 'Joseph C. Borelli';
+        
+  // Get the right popup info from the popupData object
+  function getPopupInfo(n) {
+
+    var CounDist = n,
+        CounDist = parseInt(CounDist, 10);
+        popupThumbnail = popupData['Thumb' + CounDist],
+        popupMember = popupData['Member' + CounDist],
+        popupLink = popupData['URI' + CounDist];
+
+    var popupInfo = '' +
+    '<div class="media-object">' +
+      '<div class="media-object-section">' +
+        '<div class="thumbnail">' +
+          '<a href="' + popupLink + '"><img src="' + popupThumbnail + '"></a>' +
+        '</div>' +
+      '</div>' +
+      '<div class="media-object-section">' +
+        '<h4><a href="' + popupLink + '"><strong>District ' + CounDist + '</strong></a></h4>' +
+        '<p><strong>' + popupMember + '</strong></p>' +
+      '</div>' +
+    '</div>'
+
+    return popupInfo;
+
+  }
+
+
+  /**
+   * Carto Map
+   */
+
+  // Add the map
+  var map = L.map('map', {
+    scrollWheelZoom: false,
+    minZoom: 9,
+    maxZoom: 17,
+    layers: [
+        L.tileLayer('https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png', {
+          minZoom: 13,
+          maxZoom: 17
+        }),
+        L.tileLayer('https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_nolabels/{z}/{x}/{y}.png', {
+          maxZoom: 12,
+          minZoom: 9
+        })
+    ]
+  }).setView([40.727760, -73.987218], 11);
+
+  // Add the Districts layer
+  var layerSource = {
+    user_name: 'nyc-council',
+    type: 'cartodb',
+    sublayers: [
+      {
+        sql: "SELECT * FROM nyc_city_council_dist_cm",
+        cartocss: "#nyc_city_council_dist_cm { polygon-fill: #2f56a6; polygon-opacity: 0; line-width: 1; line-color: #2f56a6; line-opacity: 0.5; polygon-comp-op: darken; } #layer::labels {text-name: [coundist]; text-face-name: 'Open Sans Bold'; text-size: 12; text-fill: #23417d; text-label-position-tolerance: 0; text-halo-radius: 2; text-halo-fill: #F9F9F9; text-dy: 0; text-allow-overlap: false; text-placement: point; text-placement-type: dummy; }",
+      }
+    ],
+    cartodb_logo: false,
+  }
+  cartodb.createLayer(map, layerSource, {
+    https: true
+  })
+  .addTo(map)
+  .done(function(layer) {
+      layer.setInteraction(false);
+      layer.on('error', function(err) {
+          console.log('error:' + err);
+      });
+  });
+
+  // Set the popup var
+  var popup = new L.Popup();
+
+  
+  /**
+   * Get popups info via Carto SQL for map clicks
+   */
+
+  map.on('click', function(e) {
+
+    jQuery('#mapAddress').val('');
+
+    var sql = new cartodb.SQL({ user: 'nyc-council' });
+
+    sql.execute('SELECT * FROM nyc_city_council_dist_cm WHERE ST_Intersects(the_geom,CDB_' + e.latlng + ')')
+        .done(function(data) {
+          if ( data.rows.length != 0 ) {
+            var CounDist = data.rows[0]['dist'];
+            popup.setLatLng(e.latlng);
+            popup.setContent(getPopupInfo(CounDist));
+            map.openPopup(popup);
+          }
+        })
+        .error(function(errors) {
+          console.log("errors:" + errors);
+        });
+
+  });
+
+
+  /**
+   * Address Lookup
+   * Use the NYC Geoclient API to get Council District info
+   */
+
+  // Add the Leaflet control
+  var addresslookup = L.control({position: 'topright'});
+  addresslookup.onAdd = function (map) {
+    var div = L.DomUtil.create('div', 'addresslookup');
+    L.DomEvent.disableClickPropagation(div);
+    div.innerHTML = '<form aria-hidden="true" aria-describedby="addresslookup-error" id="addresslookup"><input id="mapAddress" aria-label="Enter street address or borough" type="text" placeholder="Street Address, Borough" tabindex="-1"><button type="submit" class="dashicons-before dashicons-search" aria-label="Search" tabindex="-1"><span class="show-for-sr">Search</span></button><div aria-live="assertive" role="alert" id="addresslookup-error" class="addresslookup-error"></div></form>';
+    return div;
+  };
+  addresslookup.addTo(map);
+
+  // Prevent the control from panning or zooming the map
+  addresslookup.getContainer().addEventListener('mouseover', function () {
+    map.dragging.disable();
+    map.doubleClickZoom.disable();
+  });
+  addresslookup.getContainer().addEventListener('mouseout', function () {
+    map.dragging.enable();
+    map.doubleClickZoom.enable();
+  });
+
+  // When user submits the form...
+  document.getElementById('addresslookup').addEventListener('submit', function(e){
+    e.preventDefault();
+    var mapAddress = jQuery('#mapAddress').val();
+    ajaxGeoclient( mapAddress, true );
+  }, false);
+
+  // Talk to the Geoclient
+  function ajaxGeoclient( terms, error ) {
+    let params;
+    try{
+      let boro = terms.split(",")[1].replace(/[^\w\s]/gi, '');
+      if (boro.toLowerCase().includes("manhattan") || boro.toLowerCase().includes("new york")){
+        boro = "Manhattan"
+      } else if (terms.toLowerCase().includes("brooklyn")){
+        boro = "Brooklyn"
+      } else if (terms.toLowerCase().includes("bronx")){
+        boro = "Bronx"
+      } else if (terms.toLowerCase().includes("queens")){
+        boro = "Queens"
+      } else if (terms.toLowerCase().includes("staten island")){
+        boro = "Staten Island"
+      };
+      let sanitizedTerms = terms.split(",")[0].replace(/[^\w\s]/gi, '')
+      let houseNum = sanitizedTerms.match(/^\d+/g)[0]
+      params = {
+        "houseNumber": houseNum,
+        "street": sanitizedTerms.replace(houseNum, "").trim(),
+        "borough": boro,
+      };
+    } catch(e) {
+      badAddress( terms, error );
+      return(console.log(e))
+    }
+
+    $.ajax({
+      url: "https://api.nyc.gov/geo/geoclient/v1/address.json?" + $.param(params),
+      beforeSend: (xhrObj) => { xhrObj.setRequestHeader("Ocp-Apim-Subscription-Key","744d90c882ac4a72ad581670a273bced") },
+    })
+    .done((data) => {
+      if ( (data.address.geosupportReturnCode === "00" || data.address.geosupportReturnCode === "01") &&
+      (data.address.geosupportReturnCode2 === "00" || data.address.geosupportReturnCode2 === "01")) {
+        let theLatitude = data.address.latitude,
+          theLongitude = data.address.longitude,
+          latlngPoint = new L.LatLng( theLatitude, theLongitude ),
+          CounDist = data.address.cityCouncilDistrict;
+        map.setZoom(17, { animate: false })
+        map.panTo(latlngPoint, { animate: false })
+        var popup = L.popup()
+          .setLatLng(latlngPoint)
+          .setContent(getPopupInfo(CounDist))
+          .openOn(map);
+        $('#addresslookup-error').html('');
+              } else {
+        badAddress( terms, error );
+        console.log("Error message 1 from API Client: ", data.address.message)
+        console.log("Error message 2 from API Client: ", data.address.message2)
+      }
+    })
+    .fail((e) => { 
+      badAddress( terms, error );
+      console.log("Error message from AJAX: ", e) 
+    });
+  }
+
+  function badAddress( terms, error ) {
+    if ( error == true ) {
+      var errorMessage = '<div class="callout alert text-small text-center"><strong>Please enter a valid street address and borough separated by a comma.</strong></div>';
+      jQuery('#addresslookup-error').html(errorMessage);
+    }  }
+
+</script>
+        
+    <!-- Google Analytics -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-68577323-2', 'auto');
+      ga('send', 'pageview');
+    </script>
+    <script>
+      /**
+      * Function that captures a click on an outbound link in Analytics.
+      * This function takes a valid URL string as an argument, and uses that URL string
+      * as the event label. Setting the transport method to 'beacon' lets the hit be sent
+      * using 'navigator.sendBeacon' in browser that support it.
+      */
+      var captureOutboundLink = function(url) {
+        if(url === "http://www.nyc.gov/html/citycouncil/html/budget/expense_funding.shtml"){
+          ga('send', 'event', 'Outbound - Expense Funding', 'click', url, {
+            'transport': 'beacon',
+            'hitCallback': function(){document.location = url;}
+          });
+        } else if (url === "http://www.nyc.gov/html/citycouncil/html/budget/capital_funding.shtml"){
+          ga('send', 'event', 'Outbound - Capital Funding', 'click', url, {
+            'transport': 'beacon',
+            'hitCallback': function(){document.location = url;}
+          });
+        } else if (url === "https://data.cityofnewyork.us/City-Government/New-York-City-Council-Discretionary-Funding/4d7f-74pe"){
+          ga('send', 'event', 'Outbound - Discretionary Funding', 'click', url, {
+            'transport': 'beacon',
+            'hitCallback': function(){document.location = url;}
+          });
+        } else if (url === "http://council.nyc.gov/data/wp-content/uploads/sites/73/2019/08/growing-food-equity-1.pdf"){
+          ga('send', 'event', 'SOC Food Equity Report', 'click', url, {
+            'transport': 'beacon',
+            'hitCallback': function(){document.location = url;}
+          });
+        } else if (url === "http://council.nyc.gov/data/wp-content/uploads/sites/73/2020/01/Taxi-Medallion-Task-Force-Report-Final.pdf"){
+          ga('send', 'event', 'Taxi Medallion Task Force Report', 'click', url, {
+            'transport': 'beacon',
+            'hitCallback': function(){document.location = url;}
+          });
+        } else if (url === "http://council.nyc.gov/data/wp-content/uploads/sites/73/2020/01/FINAL-PAPER.pdf"){
+          ga('send', 'event', 'Homelessness Crisi Report', 'click', url, {
+            'transport': 'beacon',
+            'hitCallback': function(){document.location = url;}
+          });
+        }
+      }
+    </script>
+  </body>
+</html>
